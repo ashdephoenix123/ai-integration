@@ -33,8 +33,6 @@ const client = new OpenAI({
 //   }
 // }
 
-
-
 // const stream = await client.responses.create({
 //     model: "gpt-5.5",
 //     input: "summarize the movie obsession which was released recently.",
