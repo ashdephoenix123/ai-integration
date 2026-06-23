@@ -48,7 +48,7 @@ const openai = new OpenAI({
 
 const response = await openai.responses.create({
     model: "gpt-5.5",
-    input: "tell me a joke",
+    input: "tell me a joke other than scarecrows and skeletons and eggs.",
     store: true,
 });
 

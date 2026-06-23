@@ -127,3 +127,15 @@ const client = new OpenAI({
 
 // console.log(response.output_text)
 
+const response = await client.responses.create({
+  model: 'gpt-5.5',
+  input: [
+    {
+      role: 'user',
+      content: "What is the weather today in delhi, india?"
+    }
+  ],
+  tools: [{type: 'web_search'}]
+})
+
+console.log(response.output_text)
